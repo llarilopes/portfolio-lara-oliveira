@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portfólio | Lara Oliveira</title>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,900;1,9..144,700&display=swap" rel="stylesheet">
 <style>
 :root {
   --bg:       #08050F;
@@ -32,7 +32,7 @@ nav {
 }
 .nav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
 .nav-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--violet); box-shadow: 0 0 8px var(--violet); }
-.nav-brand-text { font-family: 'Syne', sans-serif; font-size: 14px; font-weight: 800; color: var(--text); letter-spacing: -0.01em; }
+.nav-brand-text { font-family: 'Fraunces', serif; font-size: 14px; font-weight: 800; color: var(--text); letter-spacing: -0.01em; }
 .nav-links { display: flex; gap: 32px; list-style: none; }
 .nav-links a { font-size: 13px; font-weight: 500; color: var(--muted); text-decoration: none; transition: color 0.2s; }
 .nav-links a:hover { color: var(--text); }
@@ -44,13 +44,14 @@ nav {
   display: flex; flex-direction: column; justify-content: center;
   padding-left: 40px; padding-right: 40px; padding-bottom: 48px;
   position: relative; border-bottom: 1px solid var(--border);
+  overflow-x: hidden;
 }
 .cover-glow { position: absolute; width: 500px; height: 500px; border-radius: 50%; background: radial-gradient(circle, rgba(191,95,255,0.18) 0%, transparent 70%); top: 50%; right: -80px; transform: translateY(-50%); pointer-events: none; }
 .cover-glow2 { position: absolute; width: 300px; height: 300px; border-radius: 50%; background: radial-gradient(circle, rgba(120,40,220,0.12) 0%, transparent 70%); bottom: 60px; left: -60px; pointer-events: none; }
 .cover-tag { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--border); border-radius: 100px; background: var(--violet-dim); padding: 5px 16px; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--violet); width: fit-content; margin-bottom: 40px; position: relative; }
 .live-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--violet); box-shadow: 0 0 6px var(--violet); animation: pulse 2s infinite; }
 @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
-.cover-h1 { font-family: 'Syne', sans-serif; font-size: clamp(44px, 8vw, 96px); font-weight: 800; line-height: 0.95; letter-spacing: -0.03em; color: var(--text); margin-bottom: 28px; max-width: 700px; position: relative; }
+.cover-h1 { font-family: 'Fraunces', serif; font-size: clamp(36px, 7vw, 80px); font-weight: 900; line-height: 1.0; letter-spacing: -0.02em; color: var(--text); margin-bottom: 28px; max-width: 100%; position: relative; word-break: break-word; }
 .cover-h1 span { color: var(--violet); text-shadow: 0 0 32px rgba(191,95,255,0.4); }
 .cover-desc { font-size: 16px; font-weight: 300; color: var(--muted); max-width: 480px; line-height: 1.75; margin-bottom: 48px; position: relative; }
 .cover-actions { display: flex; gap: 14px; flex-wrap: wrap; position: relative; }
@@ -66,7 +67,7 @@ nav {
 .section { padding: 72px 40px; border-bottom: 1px solid var(--border); max-width: 1000px; margin: 0 auto; }
 .sec-eyebrow { display: flex; align-items: center; gap: 10px; font-size: 10px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--violet); margin-bottom: 16px; }
 .sec-eyebrow::before { content: ''; width: 16px; height: 1px; background: var(--violet); }
-.sec-title { font-family: 'Syne', sans-serif; font-size: clamp(28px, 4vw, 44px); font-weight: 800; letter-spacing: -0.025em; color: var(--text); line-height: 1.05; margin-bottom: 40px; }
+.sec-title { font-family: 'Fraunces', serif; font-size: clamp(26px, 4vw, 44px); font-weight: 900; letter-spacing: -0.02em; color: var(--text); line-height: 1.05; margin-bottom: 40px; word-break: break-word; }
 
 .sobre-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
 .sobre-text p { color: var(--muted); font-size: 15px; line-height: 1.8; margin-bottom: 18px; font-weight: 300; }
@@ -75,7 +76,7 @@ nav {
 .sobre-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 14px; padding: 20px 24px; display: flex; align-items: center; gap: 16px; }
 .sobre-card-icon { width: 40px; height: 40px; background: var(--violet-dim); border: 1px solid var(--border); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
 .sobre-card-icon svg { width: 18px; height: 18px; stroke: var(--violet); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
-.sobre-card-val { font-family: 'Syne', sans-serif; font-size: 22px; font-weight: 800; color: var(--text); line-height: 1; margin-bottom: 2px; }
+.sobre-card-val { font-family: 'Fraunces', serif; font-size: 22px; font-weight: 800; color: var(--text); line-height: 1; margin-bottom: 2px; }
 .sobre-card-label { font-size: 12px; color: var(--muted2); }
 
 .services-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
@@ -88,7 +89,7 @@ nav {
 
 .process-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 .process-card { background: var(--bg2); border: 1px solid var(--border2); border-radius: 16px; padding: 32px 28px; position: relative; overflow: hidden; }
-.process-num { font-family: 'Syne', sans-serif; font-size: 64px; font-weight: 800; color: rgba(191,95,255,0.08); line-height: 1; position: absolute; top: 16px; right: 20px; }
+.process-num { font-family: 'Fraunces', serif; font-size: 64px; font-weight: 800; color: rgba(191,95,255,0.08); line-height: 1; position: absolute; top: 16px; right: 20px; }
 .process-step-label { font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--violet); margin-bottom: 10px; }
 .process-title { font-size: 18px; font-weight: 700; color: var(--text); margin-bottom: 10px; }
 .process-desc { font-size: 13px; color: var(--muted2); line-height: 1.65; }
@@ -110,7 +111,7 @@ nav {
 .pkg-card.featured { border-color: rgba(191,95,255,0.4); background: linear-gradient(145deg, rgba(191,95,255,0.1), rgba(120,40,220,0.05)); }
 .pkg-badge { position: absolute; top: -11px; right: 20px; background: var(--violet); color: #08050F; font-size: 10px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 12px; border-radius: 100px; }
 .pkg-tier { font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--violet); margin-bottom: 10px; }
-.pkg-price { font-family: 'Syne', sans-serif; font-size: 36px; font-weight: 800; color: var(--text); line-height: 1; margin-bottom: 4px; }
+.pkg-price { font-family: 'Fraunces', serif; font-size: 36px; font-weight: 800; color: var(--text); line-height: 1; margin-bottom: 4px; }
 .pkg-dur { font-size: 12px; color: var(--muted2); margin-bottom: 24px; }
 .pkg-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
 .pkg-list li { font-size: 13px; color: var(--muted); padding-left: 18px; position: relative; line-height: 1.4; }
@@ -148,13 +149,15 @@ nav {
 .contato-link-value { font-size: 14px; font-weight: 600; color: var(--text); }
 
 footer { padding: 28px 40px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border2); max-width: 1000px; margin: 0 auto; }
-.footer-brand { font-family: 'Syne', sans-serif; font-size: 13px; font-weight: 800; color: var(--muted2); }
+.footer-brand { font-family: 'Fraunces', serif; font-size: 13px; font-weight: 800; color: var(--muted2); }
 .footer-copy { font-size: 12px; color: var(--muted2); }
 
 @media (max-width: 700px) {
   nav { padding: 0 20px; }
   .nav-links { display: none; }
   .cover, .section { padding-left: 20px; padding-right: 20px; }
+  .cover { overflow-x: hidden; }
+  .cover-h1 { font-size: clamp(32px, 9vw, 52px); }
   .sobre-grid, .contato-grid { grid-template-columns: 1fr; gap: 36px; }
   .process-grid { grid-template-columns: 1fr; }
   .tab-content.active { grid-template-columns: 1fr; }
@@ -186,7 +189,7 @@ footer { padding: 28px 40px; display: flex; justify-content: space-between; alig
     <div class="live-dot"></div>
     Portfólio · Storymaker & Mobile Content Creator
   </div>
-  <h1 class="cover-h1">Momentos que<br>viram <span>conteúdo</span><br>estratégico.</h1>
+  <h1 class="cover-h1">Momentos que viram <span>conteúdo</span> estratégico.</h1>
   <p class="cover-desc">Cobertura de eventos, produção de Stories e vídeos verticais para marcas que querem presença digital autêntica e com resultado.</p>
   <div class="cover-actions">
     <a href="#pacotes" class="btn btn-violet">Ver pacotes</a>
